@@ -1,0 +1,31 @@
+:root {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    --size: 64px;
+    display: inline-grid;
+    place-items: center;
+    gap: 1 rem;
+    grid-template-columns: var(--size) 1fr;
+    border: 5px solid black;
+    border-bottom-color: slateblue;
+    border-right-color: deeppink;
+    border-radius: var(--size);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background: #FFF;
+
+    & img {
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+    }
+
+    & span {
+        font-family: Jost, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
